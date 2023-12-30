@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'kanit', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 70px;
+}
+
+/* ==================== Header ==================== */
+
+header {
+    width: 100%;
+}
+
+.metaverse-box {
+    padding-left: 70px;
+    height: 530px;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.metaverse-box .video video {
+    z-index: -100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    filter: brightness(60%);
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+}
+
+.title img {
+    width: 80px;
+}
+
+.title h1 {
+    font-size: 48px;
+    color: #00ffff;
+}
+
+.title p {
+    color: #eee;
+    font-size: 20px;
+}
+
+.title .btn {
+    padding: 14px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: #0077ff;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 30px 0;
+    transition: 0.2s;
+}
+
+.title .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #0077ff80;
+}
+
+.title .wrap {
+    color: rgb(0, 174, 255);
+}
+
+.title .wrap-htu {
+    color: #eee;
+}
+
+/* ==================== example ==================== */
+
+.example {
+    width: 100%;
+    background: #27374D;
+    overflow: hidden;
+}
+
+.example-box {
+    margin-bottom: 70px;
+}
+
+.example-title {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.example-title h1 {
+    color: #FFD700;
+    font-size: 32px;
+}
+
+.example-title p {
+    color: #eee;
+    font-size: 18px;
+}
+
+.example-grid {
+    margin-top: 70px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+.example-item {
+    margin: 0 auto;
+}
+
+.example-item img {
+    border-radius: 7px;
+    width: 100%;
+}
+
+/* ==================== htu ==================== */
+
+.htu {
+    width: 100%;
+    min-height: 50vh;
+    background-color: #040D12;
+    overflow: hidden;
+    padding-bottom: 50px;
+    padding: 20px;
+
+}
+
+.htu-title {
+    margin-top: 70px;
+}
+
+.htu-title h1 {
+    color: #FFD700;
+    font-size: 40px;
+}
+
+.htu-details p {
+    color: #eee;
+    font-size: 18px;
+}
+
+.htu-details a {
+    color: #0077ff;
+}
+
+.download-app {
+    margin-top: 40px;
+}
+
+.download-app h1 {
+    font-size: 32px;
+    color: #FFD700;
+}
+
+.link-img {
+    margin-top: 10px;
+    display: flex;
+}
+
+.link-img img {
+    width: 150px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    .metaverse-box {
+        padding-left: 0;
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .title {
+        margin: 30px 0;
+    }
+}
